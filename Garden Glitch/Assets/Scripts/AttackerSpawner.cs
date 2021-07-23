@@ -19,7 +19,8 @@ public class AttackerSpawner : MonoBehaviour
     }
     private void SpawnAttacker()
     {
-        Instantiate(attackerPrefab, transform.position, Quaternion.identity);
+        Attacker newAttackers = Instantiate(attackerPrefab, transform.position, Quaternion.identity) as Attacker;
+        newAttackers.transform.parent = transform;
     }
     void Update()
     {

@@ -1224,6 +1224,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3882025795164726344, guid: 2254116ae9b3d124ab8a8beedadcc8e9, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197321427050921202, guid: 2254116ae9b3d124ab8a8beedadcc8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2254116ae9b3d124ab8a8beedadcc8e9, type: 3}
 --- !u!1001 &6893059030377365358
