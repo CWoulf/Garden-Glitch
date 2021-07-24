@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotation: 360
+  damage: 25
 --- !u!60 &1757021275897303260
 PolygonCollider2D:
   m_ObjectHideFlags: 0
