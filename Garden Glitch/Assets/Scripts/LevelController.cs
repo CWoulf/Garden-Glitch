@@ -14,6 +14,7 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
+
         winLabel.SetActive(false);
         loseLabel.SetActive(false);
     }

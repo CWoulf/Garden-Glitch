@@ -35,6 +35,10 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene("Start Menu");
         Time.timeScale = 1;
     }
+    public void LoadOptionsScreen()
+    {
+        SceneManager.LoadScene("Option Screen");
+    }
 
     public void LoadYouLose()
     {
@@ -44,4 +48,5 @@ public class LevelLoader : MonoBehaviour
     {
         Application.Quit();
     }
+
 }
