@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4006127525173122932}
   - component: {fileID: 4006127525173122933}
-  - component: {fileID: -4992596677965898820}
-  - component: {fileID: 1757021275897303260}
   - component: {fileID: 3408172755612835460}
+  - component: {fileID: 7594282899041765942}
+  - component: {fileID: -1034378033088814343}
   m_Layer: 0
-  m_Name: Zucchini
+  m_Name: Quill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4006127525173122934}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.62, y: 2.21, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 6
-  m_Sprite: {fileID: 21300000, guid: e1305bc8fce970a4c921ec624fdbee9a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4d5d87b9de71ea0469965f0459d89d6d, type: 3}
+  m_Color: {r: 0.118100405, g: 0.6886792, b: 0.030319147, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -85,63 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-4992596677965898820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006127525173122934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c50dc16d5bedf24190845d87e08e2bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rotation: 360
-  damage: 25
---- !u!60 &1757021275897303260
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4006127525173122934}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.56, y: 0.56}
-    newSize: {x: 0.56, y: 0.56}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.14802027, y: 0.28076506}
-      - {x: -0.1897273, y: 0.28578496}
-      - {x: -0.23173907, y: 0.2832158}
-      - {x: -0.28321722, y: 0.2329067}
-      - {x: -0.28296566, y: 0.15788603}
-      - {x: -0.24034786, y: 0.099999994}
-      - {x: -0.043142796, y: 0.02168727}
-      - {x: 0.067219496, y: -0.083274364}
-      - {x: 0.16895665, y: -0.2767841}
-      - {x: 0.20935273, y: -0.2903515}
-      - {x: 0.2709787, y: -0.2566868}
-      - {x: 0.29286984, y: -0.23819414}
-      - {x: 0.27434444, y: -0.12663293}
-      - {x: 0.2220867, y: -0.025330856}
-      - {x: 0.1077387, y: 0.12466938}
-      - {x: -0.035739195, y: 0.2378416}
-      - {x: -0.09608705, y: 0.2639208}
 --- !u!50 &3408172755612835460
 Rigidbody2D:
   serializedVersion: 4
@@ -163,3 +106,44 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &7594282899041765942
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006127525173122934}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015323639, y: 0.0035766363}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4266666, y: 0.14}
+    newSize: {x: 0.56, y: 0.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4297485, y: 0.15533519}
+  m_EdgeRadius: 0
+--- !u!114 &-1034378033088814343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006127525173122934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c50dc16d5bedf24190845d87e08e2bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  rotation: 360
+  damage: 50

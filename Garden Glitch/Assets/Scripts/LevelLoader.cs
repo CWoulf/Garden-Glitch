@@ -14,10 +14,6 @@ public class LevelLoader : MonoBehaviour
         {
             StartCoroutine(WaitForTime());
         }
-        else
-        {
-            LoadNextScene();
-        }
     }
     IEnumerator WaitForTime()
     {
@@ -28,10 +24,24 @@ public class LevelLoader : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
+    }    
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex);
+        Time.timeScale = 1;
+    }
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("Start Menu");
+        Time.timeScale = 1;
     }
 
     public void LoadYouLose()
     {
         SceneManager.LoadScene("Game Over");
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
