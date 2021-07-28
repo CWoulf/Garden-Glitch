@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class LivesDisplay : MonoBehaviour
 {
-    [SerializeField] int lives = 10;
+    [SerializeField] float baseLives = 3f;
+    [SerializeField] int damage = 1;
+    float lives = 10;
     Text livesText;
     void Start()
     {
+        lives = baseLives - PlayerPrefsController.GetDifficulty();
         livesText = GetComponent<Text>();
         UpdateDisplay();
+        Debug.Log("Difficulty setting is currently: " + PlayerPrefsController.GetDifficulty());
     }
 
     private void UpdateDisplay()
@@ -21,7 +25,7 @@ public class LivesDisplay : MonoBehaviour
 
     public void LoseLives()
     {
-        lives -= 1;
+        lives -= damage;
         UpdateDisplay();
 
         if(lives <= 0)
